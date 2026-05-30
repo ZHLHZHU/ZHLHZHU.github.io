@@ -1,0 +1,12 @@
+widgets:
+  - type: profile
+    position: left
+    author: ZHLHZHU
+    avatar: ''
+    avatar_rounded: true
+    gravatar: ''
+    follow_link: ''
+    social_links:
+      GitHub: https://github.com/ZHLHZHU
+  - type: recent_posts
+    position: left
