@@ -2,7 +2,7 @@ widgets:
   - type: profile
     position: left
     author: ZHLHZHU
-    avatar: ''
+    avatar: https://github.com/ZHLHZHU.png
     avatar_rounded: true
     gravatar: ''
     follow_link: ''
