@@ -17,3 +17,19 @@ social:
 
 github_banner:
   enable: false
+
+giscus:
+  enable: true
+  src: https://giscus.app/client.js
+  repo: ZHLHZHU/ZHLHZHU.github.io
+  repo_id: R_kgDOSsaFww
+  category: General
+  category_id: DIC_kwDOSsaFw84C-NTX
+  mapping: pathname
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: top
+  theme: preferred_color_scheme
+  lang: zh-CN
+  loading: lazy
