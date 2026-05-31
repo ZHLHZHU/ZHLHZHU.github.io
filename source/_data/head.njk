@@ -1,0 +1,57 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "url": "{{ config.url }}",
+  "name": "{{ config.title }}",
+  "description": "{{ config.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ config.author }}",
+    "url": "{{ config.url }}"
+  }
+}
+</script>
+
+{% if is_post() %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": { "@id": "{{ config.url }}", "name": "{{ config.title }}" }
+    }{% if page.categories.length > 0 %}{% for cat in page.categories.toArray() %},
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index + 1 }},
+      "item": { "@id": "{{ config.url }}/categories/{{ cat.name }}", "name": "{{ cat.name }}" }
+    }{% endfor %}{% endif %},
+    {
+      "@type": "ListItem",
+      "position": {{ page.categories.length + 2 }},
+      "item": { "@id": "{{ page.permalink }}", "name": "{{ page.title | e }}" }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | e }}",
+  "url": "{{ page.permalink }}",
+  "datePublished": "{{ page.date.toISOString() }}",
+  "dateModified": "{{ (page.updated or page.date).toISOString() }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ config.author }}",
+    "url": "{{ config.url }}"
+  },
+  "description": "{{ page.description or '' | e }}"
+}
+</script>
+{% endif %}

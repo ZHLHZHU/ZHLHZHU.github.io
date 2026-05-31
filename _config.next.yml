@@ -19,6 +19,7 @@ github_banner:
   enable: false
 
 custom_file_path:
+  head: source/_data/head.njk
   postBodyEnd: source/_data/post-body-end.njk
 
 comments:
