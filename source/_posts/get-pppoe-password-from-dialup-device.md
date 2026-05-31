@@ -4,7 +4,7 @@ date: 2020-04-03 23:45:00
 tags:
 ---
 现在某些路由器有从旧路由器自动学习宽带账户密码功能，
-![哇为路由截图.jpeg][RoutePPPoeExample-598850f7aa1547d38a584cc7e57c9788.jpeg]
+![哇为路由截图.jpeg](RoutePPPoeExample-598850f7aa1547d38a584cc7e57c9788.jpeg)
 
 目前大部分宽带拨号使用的PPP认证类型还是基于明文的PAP验证，只要伪装成PPPoE服务器，完成握手过程，就能获得路由器上的宽带账户与密码。
 <!--more-->
