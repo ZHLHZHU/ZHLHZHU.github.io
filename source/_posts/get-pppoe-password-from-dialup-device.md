@@ -1,7 +1,8 @@
 ---
 title: 从拨号设备获取PPPoE密码
 date: 2020-04-03 23:45:00
-tags:
+categories: [网络]
+tags: [PPPoE, 宽带, 路由器, 抓包]
 ---
 现在某些路由器有从旧路由器自动学习宽带账户密码功能，
 ![哇为路由截图.jpeg](RoutePPPoeExample-598850f7aa1547d38a584cc7e57c9788.jpeg)

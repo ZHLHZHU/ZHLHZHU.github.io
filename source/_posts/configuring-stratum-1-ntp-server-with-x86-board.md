@@ -1,7 +1,8 @@
 ---
 title: 用x86工控板配置一个stratum-1 ntp服务器
 date: 2019-06-11 00:44:00
-tags:
+categories: [网络]
+tags: [NTP, Stratum-1, GPS, x86]
 ---
 ## 前言
 　　国内ntp服务器的资源严重不足，在pool.ntp.org池中的每台服务器负载都很重，之前尝试过把一台1C1G1M服务器加入ntp池中，大量包直接把服务器给搞宕，然后分数直掉，被踢出ntp池，大家如果有空闲的服务器资源可以贡献出来分担一下：[ntp pool](https://www.ntppool.org/zh/)

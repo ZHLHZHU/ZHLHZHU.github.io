@@ -1,6 +1,8 @@
 ---
 title: 领普 ES3 人体传感器维修记录
+author: AAA智能家居专修
 date: 2026-05-31 17:31:46
+categories: [折腾]
 tags: [es3, 人体传感器, 维修]
 ---
 ![es3](es3.webp)
