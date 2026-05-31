@@ -18,6 +18,12 @@ social:
 github_banner:
   enable: false
 
+custom_file_path:
+  postBodyEnd: source/_data/post-body-end.njk
+
+comments:
+  active: giscus
+
 giscus:
   enable: true
   src: https://giscus.app/client.js
