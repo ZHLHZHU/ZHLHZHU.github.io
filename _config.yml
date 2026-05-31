@@ -5,7 +5,7 @@
 # Site
 title: ZHLHZHU
 subtitle: ''
-description: ''
+description: 'ZHLHZHU 的技术博客 - 网络设备、嵌入式、DIY 折腾记录'
 keywords:
 author: ZHLHZHU
 language: zh-CN
@@ -100,6 +100,18 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+sitemap:
+  path: sitemap.xml
+
+feed:
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss2.xml
+  limit: 20
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
