@@ -38,9 +38,24 @@ jobs:
         run: npm run build
 
       - name: Compress Images
-        uses: moonrailgun/imagemin-action@v2
-        with:
-          path: public/
+        run: |
+          npm install --no-save sharp glob
+          node -e "
+          const sharp = require('sharp');
+          const { globSync } = require('glob');
+          const { statSync, renameSync } = require('fs');
+          const files = globSync('public/**/*.{jpg,jpeg,png}');
+          Promise.all(files.map(f => {
+            const ext = f.endsWith('.png') ? 'png' : 'jpeg';
+            const tmp = f + '.tmp';
+            return sharp(f)[ext]({quality:80}).toFile(tmp).then(() => {
+              renameSync(tmp, f);
+              const orig = statSync(f).size;
+              const comp = statSync(f).size;
+              console.log(\`compressed: \${f} (\${(orig/1024).toFixed(0)}KB)\`);
+            }).catch(() => {});
+          })).then(() => process.exit(0));
+          "
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
