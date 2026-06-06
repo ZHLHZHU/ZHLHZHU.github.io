@@ -40,3 +40,11 @@ giscus:
   theme: preferred_color_scheme
   lang: zh-CN
   loading: lazy
+
+# Mermaid tag
+mermaid:
+  enable: true
+  # Available themes: default | dark | forest | neutral
+  theme:
+    light: default
+    dark: dark
