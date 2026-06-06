@@ -192,7 +192,7 @@ sudo python3 unifying-kvm/kvm.py --keyboard VID:PID --targets "pc:0,local:_,mac:
 三个仓库都在 GitHub 上,欢迎 star / issue:
 
 - [nrf52-unifying](https://github.com/ZHLHZHU/nrf52-unifying) — nRF52840 固件
-- [rust-unifying](https://github.com/ZHLHZHU/rust-unifying) — 优联协议库
+- [nrf52-rs-scaffold](https://github.com/ZHLHZHU/nrf52-rs-scaffold) — nRF52840 embassy + embassy-boot 脚手架
 - [unifying-kvm](https://github.com/ZHLHZHU/unifying-kvm) — 键盘 KVM 转发器
 
 ---
