@@ -18,6 +18,11 @@ social:
 github_banner:
   enable: false
 
+footer:
+  beian:
+    enable: true
+    icp: 粤ICP备17005100号
+
 custom_file_path:
   head: source/_data/head.njk
   postBodyEnd: source/_data/post-body-end.njk
